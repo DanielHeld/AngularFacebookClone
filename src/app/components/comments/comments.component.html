@@ -1,0 +1,13 @@
+<div class="container py-1 px-0">
+  <li class="list-group-item p-2">
+    <div class="container">
+      <input type="text" placeholder="write a comment..." #commentInput class="p-0">
+      <button type="submit" (click)="addComment(commentInput.value); commentInput.value= ''" class="btn btn-secondary btn-sm mx-2">write</button>
+    </div>
+  </li>
+  <ul *ngFor="let comment of comments" class="list-group">
+    <li class="list-group-item p-2">
+      {{comment.body}}
+    </li>
+  </ul>
+</div>

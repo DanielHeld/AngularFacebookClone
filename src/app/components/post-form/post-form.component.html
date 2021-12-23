@@ -1,0 +1,32 @@
+<div class="container px-0">
+  <button *ngIf="!creating" (click)="creating = true" class="btn btn-primary my-3">Create a new Post</button>
+</div>
+
+<div *ngIf="creating" class="card bg-light bg-secondary mb-2 mt-2">
+  <h2 class="card-title pt-3 p-3 pb-0">New Post</h2>
+  <form (ngSubmit)="onSubmit(); postForm.resetForm()" #postForm="ngForm" class="card-body">
+    <div class="form-group">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" [(ngModel)]="newPost.title" #title="ngModel" name="title" placeholder="title" required>
+
+      <div *ngIf="title.errors?.required" class="text-danger">Title is required.</div>
+
+      <p>{{newPost.title}}</p>
+
+    </div>
+
+    <div class="form-group">
+      <label for="body" class="form-label">Body</label>
+      <textarea rows="3" type="text" class="form-control" id="body"
+                [(ngModel)]="newPost.body" #body="ngModel" required
+                name="body" placeholder="What do you want to say..."></textarea>
+
+      <div *ngIf="body.errors?.required" class="text-danger">Post can not be empty</div>
+
+      <p>{{newPost.body}}</p>
+
+    </div>
+    <button type="submit" [disabled]="!title.valid || !body.valid" (click)="submitPost();postForm.resetForm()" class="btn btn-success">Make Post</button>
+    <button (click)="creating=false;postForm.resetForm()" class="btn btn-secondary mx-3">Cancel</button>
+  </form>
+</div>

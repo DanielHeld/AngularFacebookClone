@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "facebook-clone": {
+    "dani-connect": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/facebook-clone",
+            "outputPath": "dist/dani-connect",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "facebook-clone:build"
+            "browserTarget": "dani-connect:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "facebook-clone:build:production"
+              "browserTarget": "dani-connect:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "facebook-clone:build"
+            "browserTarget": "dani-connect:build"
           }
         },
         "test": {
@@ -113,15 +113,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "facebook-clone:serve"
+            "devServerTarget": "dani-connect:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "facebook-clone:serve:production"
+              "devServerTarget": "dani-connect:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "facebook-clone"
+  "defaultProject": "dani-connect"
 }

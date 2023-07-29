@@ -8,7 +8,7 @@ You create new posts.
 Comment on existing posts.
 ![comments screenshot](src/assets/comments_screenshot.png)
 See your friends.
-![user screenshot](src/assets/user_screenshot.png)
+![users screenshot](src/assets/users_screenshot.png)
 
 
 

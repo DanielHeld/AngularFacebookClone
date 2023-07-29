@@ -1,4 +1,4 @@
-# Socaial media platform Angular
+# Social media platform Angular
 
 A small project showing a simple social media platform frontend. It was build with the aim of learning the Angular basics.
 The data for posts, comments and users is simply fetched from https://jsonplaceholder.typicode.com.

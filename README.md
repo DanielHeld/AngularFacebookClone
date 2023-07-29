@@ -1,6 +1,16 @@
 # FacebookClone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+A small project cloning a simple social media platform frontend. It was build with the aim of learning the Angular basics.
+The data for posts, comments and users is simply fetched from https://jsonplaceholder.typicode.com.
+
+You create new posts.
+![posts screenshot](src/assets/posts_screenshot.png)
+Comment on existing posts.
+![comments screenshot](src/assets/comments_screenshot.png)
+See your friends.
+![user screenshot](src/assets/user_screenshot.png)
+
+
 
 ## Development server
 

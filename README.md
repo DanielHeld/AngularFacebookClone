@@ -1,6 +1,6 @@
 # Social media platform Angular
 
-A small project showing a simple social media platform frontend. It was build with the aim of learning the Angular basics.
+A small project showing a simple social media platform frontend that is created using [Angular](https://angular.io/) and [Bootstrap](https://getbootstrap.com/). It was build with the aim of learning the [Angular](https://angular.io/) basics.
 The data for posts, comments and users is simply fetched from https://jsonplaceholder.typicode.com.
 
 You create new posts.
